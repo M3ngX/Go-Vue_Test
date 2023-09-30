@@ -93,7 +93,7 @@ func InitDB() *gorm.DB {
 
 func isTelephoneExist(db *gorm.DB, telephone string) bool {
 	var user User
-	db.Where("telephone = ?", telephone).First(&user)
+	db.Where("telephone11111 = ?", telephone).First(&user)
 	if user.ID != 0 {
 		return true
 	}
